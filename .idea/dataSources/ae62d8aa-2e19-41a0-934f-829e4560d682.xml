@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="jdbc@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.14">
+    <root id="1">
+      <ServerVersion>11.2</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="jdbc">
+      <ObjectId>24648</ObjectId>
+      <StateNumber>683</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>724</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="mydb">
+      <ObjectId>16400</ObjectId>
+      <StateNumber>578</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="netcrackerDB">
+      <ObjectId>16393</ObjectId>
+      <StateNumber>570</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="5" parent="1" name="postgres">
+      <ObjectId>13012</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>567</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>665</IntrospectionStateNumber>
+    </database>
+    <role id="6" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="13" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="14" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="15" parent="2" name="information_schema">
+      <ObjectId>12716</ObjectId>
+      <StateNumber>366</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="16" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>359</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="17" parent="2" name="pg_temp_1">
+      <ObjectId>11804</ObjectId>
+      <StateNumber>121</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="18" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <StateNumber>1</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="19" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11805</ObjectId>
+      <StateNumber>121</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="20" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>360</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>725</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="21" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="25" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="26" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="27" parent="2" name="adminpack">
+      <ObjectId>24649</ObjectId>
+      <Comment>administrative functions for PostgreSQL</Comment>
+      <StateNumber>684</StateNumber>
+      <Version>2.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <extension id="28" parent="2" name="plpgsql">
+      <ObjectId>12998</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>519</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <table id="29" parent="20" name="cars">
+      <ObjectId>24658</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>707</StateNumber>
+    </table>
+    <table id="30" parent="20" name="client">
+      <ObjectId>24661</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>723</StateNumber>
+    </table>
+    <table id="31" parent="20" name="distributor">
+      <ObjectId>24664</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>706</StateNumber>
+    </table>
+    <table id="32" parent="20" name="orders">
+      <ObjectId>24667</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>707</StateNumber>
+    </table>
+    <table id="33" parent="20" name="paintfactory">
+      <ObjectId>24670</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>706</StateNumber>
+    </table>
+    <column id="34" parent="29" name="model">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>686</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="35" parent="29" name="colour">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>686</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="36" parent="29" name="vin">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>686</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="37" parent="29" name="cars_pkey">
+      <ObjectId>24673</ObjectId>
+      <StateNumber>698</StateNumber>
+      <ColNames>vin</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="38" parent="29" name="cars_pkey">
+      <ObjectId>24674</ObjectId>
+      <StateNumber>698</StateNumber>
+      <ColNames>vin</ColNames>
+      <UnderlyingIndexName>cars_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="39" parent="30" name="client_name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>688</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="40" parent="30" name="client_id">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>722</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="41" parent="30" name="client_orders_passportid_fk">
+      <ObjectId>24703</ObjectId>
+      <StateNumber>723</StateNumber>
+      <ColNames>client_id</ColNames>
+      <RefTableId>24667</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>orders</RefTableName>
+      <RefColNames>passportid</RefColNames>
+    </foreign-key>
+    <column id="42" parent="31" name="vin">
+      <Position>1</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>690</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="43" parent="31" name="factory_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>690</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="44" parent="31" name="distribute_primary_key">
+      <ObjectId>24677</ObjectId>
+      <StateNumber>700</StateNumber>
+      <ColNames>vin
+factory_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="45" parent="31" name="fki_vin_id_foreign_key">
+      <ObjectId>24685</ObjectId>
+      <StateNumber>705</StateNumber>
+      <ColNames>vin</ColNames>
+    </index>
+    <index id="46" parent="31" name="fki_factory_id_foreign_key">
+      <ObjectId>24683</ObjectId>
+      <StateNumber>703</StateNumber>
+      <ColNames>factory_id</ColNames>
+    </index>
+    <key id="47" parent="31" name="distribute_primary_key">
+      <ObjectId>24678</ObjectId>
+      <StateNumber>700</StateNumber>
+      <ColNames>vin</ColNames>
+      <UnderlyingIndexName>distribute_primary_key</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="48" parent="31" name="vin_id_foreign_key">
+      <ObjectId>24696</ObjectId>
+      <StateNumber>708</StateNumber>
+      <ColNames>vin</ColNames>
+      <RefTableId>24658</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>cars</RefTableName>
+      <RefKeyName>cars_pkey</RefKeyName>
+      <RefColNames>vin</RefColNames>
+    </foreign-key>
+    <foreign-key id="49" parent="31" name="factory_id_foreign_key">
+      <ObjectId>24686</ObjectId>
+      <StateNumber>706</StateNumber>
+      <ColNames>factory_id</ColNames>
+      <RefTableId>24670</RefTableId>
+      <RefColPositions>2</RefColPositions>
+      <RefTableName>paintfactory</RefTableName>
+      <RefKeyName>factory_pkey</RefKeyName>
+      <RefColNames>factory_id</RefColNames>
+    </foreign-key>
+    <column id="50" parent="32" name="vin">
+      <Position>1</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>692</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="51" parent="32" name="order_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>692</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="52" parent="32" name="passportid">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>692</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="53" parent="32" name="orders_pkey">
+      <ObjectId>24681</ObjectId>
+      <StateNumber>702</StateNumber>
+      <ColNames>order_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="54" parent="32" name="orders_passportid_uindex">
+      <ObjectId>24702</ObjectId>
+      <StateNumber>717</StateNumber>
+      <ColNames>passportid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="55" parent="32" name="fki_vin_foreign_key">
+      <ObjectId>24684</ObjectId>
+      <StateNumber>704</StateNumber>
+      <ColNames>vin</ColNames>
+    </index>
+    <key id="56" parent="32" name="orders_pkey">
+      <ObjectId>24682</ObjectId>
+      <StateNumber>702</StateNumber>
+      <ColNames>order_id</ColNames>
+      <UnderlyingIndexName>orders_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="57" parent="32" name="vin_foreign_key">
+      <ObjectId>24691</ObjectId>
+      <StateNumber>707</StateNumber>
+      <ColNames>vin</ColNames>
+      <RefTableId>24658</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>cars</RefTableName>
+      <RefKeyName>cars_pkey</RefKeyName>
+      <RefColNames>vin</RefColNames>
+    </foreign-key>
+    <column id="58" parent="33" name="paint">
+      <Position>1</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>694</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="59" parent="33" name="factory_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>694</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="60" parent="33" name="factory_pkey">
+      <ObjectId>24679</ObjectId>
+      <StateNumber>701</StateNumber>
+      <ColNames>factory_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="61" parent="33" name="factory_pkey">
+      <ObjectId>24680</ObjectId>
+      <StateNumber>701</StateNumber>
+      <ColNames>factory_id</ColNames>
+      <UnderlyingIndexName>factory_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
